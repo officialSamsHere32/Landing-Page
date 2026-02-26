@@ -2,11 +2,9 @@ import { useState } from 'react'
 import Navbar from './component/Navbar'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-
+import Content from './component/Content'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div className='flex flex-row justify-center w-full'>
@@ -14,6 +12,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Navbar />} />
           </Routes>
+          <Content />
         </div>
       </div>
     </>
