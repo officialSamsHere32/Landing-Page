@@ -1,0 +1,31 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: ; */
+}
+
+/* type selector (tag) */
+p {
+    font-size: large;
+}
+
+/* class selector */
+.test {
+    /*  */
+}
+
+/* ID selector */
+#designCorner {
+    /*  */
+}
+
+/* decendant selector */
+.test2 p {
+    /* */
+}
+
+/* Child Selector */
+.test2 > h2 {
+    
+}
