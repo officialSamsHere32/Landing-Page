@@ -1,30 +1,41 @@
 import React from "react";
+import Adidas from "../assets/adidas.png";
 
 const navItems = [
-  {text: "Home", href: "#home" },
-  {text: "About", href: "#about" },
-  {text: "Services", href: "#services" },
-  {text: "Contact", href: "#contact" }
+  { id: 1, text: "Home", href: "#home" },
+  { id: 2, text: "About", href: "#about" },
+  { id: 3, text: "Services", href: "#services" },
+  { id: 4, text: "Contact", href: "/contact" }
 ];
 
-
 function Navbar() {
-    return (
-        <nav className="flex justify-center h-[100px]">
-            <img src="adidas.png"></img>
-            <div className ="w-[1200px] flex items-center">
-                <div className="font-bold text-black text-[25mm]">
-                    Adidas
-                </div>
-                <div className="flex ml-auto"> 
-                    {navItems.map((index) => (
-                        <a key={index.id} href={index.href} className="ml-12 hover:font-bold">
-                            {index.text}
-                        </a>
-                    ))}
-                </div>
-            </div>
-        </nav>
-    );
+  return (
+    <nav className="w-full h-[100px] flex items-center justify-center shadow-md">
+      <div className="w-[1200px] flex items-center">
+        
+        {/* Logo */}
+        <img 
+          src={Adidas} 
+          alt="Adidas Logo"
+          className="h-[50px] object-contain"
+        />
+
+        {/* Menu */}
+        <div className="flex ml-auto">
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={item.href}
+              className="ml-12 text-black hover:font-bold transition-all duration-200"
+            >
+              {item.text}
+            </a>
+          ))}
+        </div>
+
+      </div>
+    </nav>
+  );
 }
+
 export default Navbar;
