@@ -12,7 +12,7 @@ function App() {
       <div className="flex flex-row justify-center w-full">
         <div className="w-[100%] h-[776px] [background:linear-gradient(240deg,rgba(39,245,111),rgba(19,110,52)_100%)]">
           <Routes>
-            <Route path="/" element={<RootComponent />} />
+            <Route path="/" element={<RootComponent   />} />
             <Route path="/contact" element={<RootForm />} />
           </Routes>
           <CardSection />
