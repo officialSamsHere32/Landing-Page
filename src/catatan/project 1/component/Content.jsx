@@ -1,6 +1,6 @@
 import React from "react";
 
-function Banner() {
+function Content() {
     return (
         <div className="absolute w-[1162px] h-[598px] top-[92px] left-[164px]">
             <div className="container mx-auto flex items-center justify-between">
@@ -10,7 +10,7 @@ function Banner() {
                     <div className="text xl mb-10 font-normal text-black">BUY now.<br/>See Deals.<br/>See More.</div>
                     </div>
                 <div className="w-1/2">
-                    <img src="A-shoes.webp" alt="Shoes Image" />
+                    <img src="A_shoes.webp" alt="Shoes Image" />
                 </div>
             </div>
         </div>

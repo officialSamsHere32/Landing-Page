@@ -1,10 +1,10 @@
 import React from "react";
 
 const navItems = [
-  {text: "Home", href: "#home" },
-  {text: "About", href: "#about" },
-  {text: "Services", href: "#services" },
-  {text: "Contact", href: "#contact" }
+  {id : 1, text: "Home", href: "#home" },
+  {id : 2, text: "About", href: "#about" },
+  {id : 3, text: "Services", href: "#services" },
+  {id : 4, text: "Contact", href: "/contact" }
 ];
 
 
