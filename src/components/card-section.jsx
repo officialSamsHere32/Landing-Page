@@ -21,6 +21,12 @@ const cards = [
     image: Img3,
     title: "Easy Deployment",
     desc: "Deploy your project easily with seamless integration support."
+  },
+    {
+    id: 4,
+    image: Img3,
+    title: "Easy Deployment",
+    desc: "Deploy your project easily with seamless integration support."
   }
 ];
 
