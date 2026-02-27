@@ -1,24 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import Navbar from './components/Navbar.jsx'
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import RootComponent from "./components/index.jsx";
+import CardSection from "./components/card-section.jsx";
+import RootForm from "./components/form/RootForm.jsx";
+import History from "./components/History.jsx"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div className='flex flex-row justify-center w-full'>
-        <div className='w-[100%] h-[776px] [background:linear-gradient(240deg,rgba(39,245,111),rgba(19,110,52)_100%)]'>
+      <div className="flex flex-row justify-center w-full">
+        <div className="w-[100%] h-[776px] [background:linear-gradient(240deg,rgba(39,245,111),rgba(19,110,52)_100%)]">
           <Routes>
-            <Route path="/" element={<Navbar />} />
+            <Route path="/" element={<RootComponent   />} />
+            <Route path="/contact" element={<RootForm />} />
           </Routes>
+          <CardSection />
+          <History />
+          {/* <Banner /> */}
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
