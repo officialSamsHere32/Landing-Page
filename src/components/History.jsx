@@ -15,7 +15,7 @@ function History() {
     return (
     <section className="w-full py-24 flex justify-center bg-gray-50">
           <div className="w-[1200px]">
-            <div className="font-denton uppercase tracking-[0.04em] leading-[110%] text-[40px] sm:text-[72px] md:text-[96px] lg:text-[128px] xl:text-[164px] text-center">
+            <div className="text-4xl font-bold mb-10 text-center">
               <h2>About Us</h2>
             </div>
 
@@ -23,7 +23,7 @@ function History() {
             {cards.map((card) => (
               <div
                 key={card.id}
-                className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300"
+                className="bg-white rounded-2xl shadow-lg p-8 mt-10"
               >
               <img
                 src={card.image}
@@ -34,7 +34,7 @@ function History() {
               <p className="text-gray-600">{card.desc}</p>
             </div>
           ))}
-          <div className="text-justify text-[25px] py-10 px-7">We started in
+          <div className="text-justify text-[25px] py-10 px-7 mt-10 bg-white rounded-2xl shadow-lg p-8 ">We started in
              a laundry room and conquered the world. And in between, 
              we’ve scored big and sometimes struggled to reach our goals. We’ve done our 
              best for the best  . We’ve improved and grown. Looking ahead to the future, always remembering where we came from. This is our story.

@@ -2,7 +2,6 @@ import {useState} from 'react'
 import Button from '../ui/Button'
 import validate from '../../validation/validation'
 import FooterField from '../ui/FooterField'
-import TextAreaField from '../ui/TextAreaField'
 
 export default function ContactForm({
   onSubmit,
@@ -12,12 +11,10 @@ export default function ContactForm({
  // hooks
   const [formData, setFormData] = useState({
     email: "",
-    message: "",
   })
 // hooks for error handling
   const [errors, setErrors] = useState({
     email: "",
-    message: "",
   })
 
    //handle change untuk semua field, menggunakan name attribute untuk menentukan field mana yang berubah
@@ -45,7 +42,7 @@ export default function ContactForm({
 
   return (
     <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-5">
-      <h2 className="text-2xl font-bold text-slate-800 text-center">{title}</h2>
+      <h2 className="text-2xl font-bold text-slate-800 text-center mb-10">{title}</h2>
 
       <FooterField
         id="email"
@@ -58,16 +55,6 @@ export default function ContactForm({
         autoComplete="email"
       />
 
-
-      <TextAreaField
-        id="message"
-        label="Message"
-        value={formData.message}
-        onChange={handleChange}
-        error={errors.message}
-        placeholder="Write your message here..."
-        rows={5}
-      />
       <Button type='submit'>{submitLabel}</Button>
     </form>
   )
