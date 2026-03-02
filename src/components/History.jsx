@@ -15,19 +15,24 @@ function History() {
     return (
     <section className="w-full py-24 flex justify-center bg-gray-50">
           <div className="w-[1200px]">
+<<<<<<< HEAD
 
             <div className=" mb-12 font-denton uppercase tracking-[0.04em] leading-[110%] text-[30px] sm:text-[72px] md:text-[96px] lg:text-[128px] xl:text-[64px] text-center">
               <p>About Us</p>
               {/* <p className="text-gray-600 text-lg">
               </p> */}
+=======
+            <div className="font-denton uppercase tracking-[0.04em] leading-[110%] text-[40px] sm:text-[72px] md:text-[96px] lg:text-[128px] xl:text-[164px] text-center">
+              <h2>About Us</h2>
+>>>>>>> d69fdd3d97f4e4ee45f55404b059b105fdfb3f76
             </div>
 
             <div className="grid grid-cols-2 gap-10">
-          {cards.map((card) => (
-            <div
-              key={card.id}
-              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300"
-            >
+            {cards.map((card) => (
+              <div
+                key={card.id}
+                className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300"
+              >
               <img
                 src={card.image}
                 alt={card.title}
