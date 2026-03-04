@@ -15,6 +15,7 @@ function History() {
     return (
     <section className="w-full py-24 flex justify-center bg-gray-50">
           <div className="w-[1200px]">
+
             <div className="text-4xl font-bold mb-10 text-center">
               <h2>About Us</h2>
             </div>

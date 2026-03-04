@@ -5,7 +5,7 @@ import adidas from "../assets/adidas.png";
 function Banner() {
   return (
     <>
-      <section className="block lg:hidden w-full flex justify-center py-24">
+      <section className="block lg:hidden w-full flex justify-center py-24  [background:linear-gradient(240deg,rgba(39,245,111),rgba(19,110,52)_100%)]">
         <div className="flex-col w-full max-w-[1200px] flex items-center px-6">
           {/* Left Content */}
           <div className="w-full">
