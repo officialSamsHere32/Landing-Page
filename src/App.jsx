@@ -20,9 +20,11 @@ function App() {
           <CardSection />
           <History />
           <Footer />
-          {/* <Banner /> */}
-        </div>
+          {/* <Banner />  */}
+        </div> 
       </div>
+
+
     </>
   );
 }
