@@ -27,31 +27,30 @@ const cards = [
 
 function CardSection() {
   return (
-    <section className="w-full py-24 flex justify-center bg-gray-50">
-      <div className="w-[1200px]">
-        <img src={reactSvg} alt="react svg" />
+    <section className="sm:w-full sm:border-0 sm:flex sm:justify-center sm:bg-gray-50 w-full py-24 flex justify-center bg-gray-50 border-4 border-teal-950">
+      <div className="sm:w-[1200px] w-[300px]">
 
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Why Choose Us?</h2>
-          <p className="text-gray-600 text-lg">
+          <h2 className="sm:text-4xl sm:font-bold sm:mb-4 text-sm font-bold mb-3">Why Choose Us?</h2>
+          <p className="text-gray-600 sm:text-lg text-sm">
             Everything you need to build modern frontend applications.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-3 gap-10">
+        <div className="sm:grid sm:grid-cols-3 sm:gap-10 gap-5">
           {cards.map((card) => (
             <div
               key={card.id}
-              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300"
+              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 mb-9"
             >
               <img
                 src={card.image}
                 alt={card.title}
-                className="w-full h-[180px] object-contain mb-6"
+                className="sm:w-full sm:h-[180px] w-8 object-contain mb-6"
               />
-              <h3 className="text-2xl font-semibold mb-4">{card.title}</h3>
+              <h3 className="sm:text-2xl text-sm font-semibold mb-4">{card.title}</h3>
               <p className="text-gray-600">{card.desc}</p>
             </div>
           ))}
