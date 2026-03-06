@@ -3,6 +3,7 @@ import Img1 from "../assets/adidas.png";
 import Img2 from "../assets/adidas.png";
 import Img3 from "../assets/adidas.png";
 import reactSvg from "../assets/react.svg";
+import { href } from "react-router-dom";
 
 const cards = [
   {
@@ -10,6 +11,7 @@ const cards = [
     image: Img1,
     title: "Fast Development",
     desc: "Build modern apps faster with optimized tooling and lightning speed.",
+    href: "X.com"
   },
   {
     id: 2,
@@ -32,8 +34,8 @@ function CardSection() {
 
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="sm:text-4xl sm:font-bold sm:mb-4 text-sm font-bold mb-3">Why Choose Us?</h2>
-          <p className="text-gray-600 sm:text-lg text-sm">
+          <h2 className="sm:text-4xl sm:font-bold sm:mb-4 text-[22px] font-bold mb-3">Why Choose Us?</h2>
+          <p className="text-gray-600 sm:text-lg text-md">
             Everything you need to build modern frontend applications.
           </p>
         </div>
@@ -41,10 +43,10 @@ function CardSection() {
         {/* Cards */}
         <div className="sm:grid sm:grid-cols-3 sm:gap-10 gap-5">
           {cards.map((card) => (
+            <a href={card.href}>
             <div
               key={card.id}
-              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 mb-9"
-            >
+              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 mb-9">
               <img
                 src={card.image}
                 alt={card.title}
@@ -53,6 +55,7 @@ function CardSection() {
               <h3 className="sm:text-2xl text-sm font-semibold mb-4">{card.title}</h3>
               <p className="text-gray-600">{card.desc}</p>
             </div>
+            </a>
           ))}
         </div>
       </div>
