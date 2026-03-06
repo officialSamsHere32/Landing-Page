@@ -20,7 +20,7 @@ function History() {
               <h2>About Us</h2>
             </div>
 
-            <div className="grid sm:grid-cols-2 grid-cols-0 sm:gap-10 gap-5">
+            <div className="grid sm:grid-cols-2 grid-cols-0 sm:gap-10 gap-5 items-center sm:items-center">
             {cards.map((card) => (
               <div
                 key={card.id}
@@ -29,7 +29,7 @@ function History() {
               <img
                 src={card.image}
                 alt={card.title}
-                className="sm:w-[500px] sm:h-[240px] w-[250px] h-[300px] object-contain mb-6"
+                className="sm:w-[500px] sm:h-[240px] w-[300px] h-[300px] object-contain mb-6"
               />
               <h3 className="sm:text-2xl text-sm font-semibold mb-4">{card.title}</h3>
               <p className="text-gray-600">{card.desc}</p>

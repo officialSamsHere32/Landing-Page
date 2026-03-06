@@ -18,12 +18,14 @@ const cards = [
     image: Img2,
     title: "Modern Stack",
     desc: "Powered by the latest frontend technologies for scalable applications.",
+    href: "X2.com"
   },
   {
     id: 3,
     image: Img3,
     title: "Easy Deployment",
     desc: "Deploy your project easily with seamless integration support.",
+    href: "X3.com"
   },
 ];
 
