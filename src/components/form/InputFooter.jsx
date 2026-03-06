@@ -42,7 +42,7 @@ export default function ContactForm({
 
   return (
     <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-5">
-      <h2 className="text-2xl font-bold text-slate-800 text-center mb-10">{title}</h2>
+      <h2 className="text-2xl font-bold text-slate-800 sm:text-center text-center sm:mb-10">{title}</h2>
 
       <FooterField
         id="email"
@@ -55,7 +55,7 @@ export default function ContactForm({
         autoComplete="email"
       />
 
-      <Button type='submit' className='w-[150px]'>{submitLabel}</Button>
+      <Button type='submit' className='sm:w-[150px] w-[125px] ml-[135px]'>{submitLabel}</Button>
     </form>
   )
 }
