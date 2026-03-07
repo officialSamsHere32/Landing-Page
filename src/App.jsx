@@ -4,6 +4,7 @@ import RootComponent from "./components/index.jsx";
 import CardSection from "./components/card-section.jsx";
 import RootForm from "./components/form/RootForm.jsx";
 import History from "./components/History.jsx";
+import Skills from "./components/Skills.jsx";
 import Footer from "./components/Footer.jsx";
 import Portfolio from "./components/portfolio.jsx";
 
@@ -12,13 +13,14 @@ function App() {
 
   return (
     <>
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-hidden pt-20">
         <Routes>
           <Route path="/" element={<RootComponent />} />
           <Route path="/contact" element={<RootForm />} />
         </Routes>
         <CardSection />
         <History />
+        <Skills />
         <Portfolio />
         <Footer />
       </div>

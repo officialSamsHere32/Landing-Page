@@ -93,13 +93,13 @@
 
 
 import React, { useState, useEffect } from "react";
-import Adidas from "../assets/adidas.png";
 
 const navItems = [
   { id: 1, text: "Home", href: "#home" },
   { id: 2, text: "About", href: "#about" },
-  { id: 3, text: "Services", href: "#services" },
-  { id: 4, text: "Contact", href: "/contact" }
+  { id: 3, text: "Skills", href: "#skills" },
+  { id: 4, text: "Portfolio", href: "#portfolio" },
+  { id: 5, text: "Contact", href: "/contact" },
 ];
 
 function Navbar() {
@@ -117,15 +117,13 @@ function Navbar() {
   return (
     <>
       {/* Navbar Container */}
-      <nav className="w-full shadow-md bg-white top-0 z-50">
+      <nav className="fixed w-full shadow-md bg-white top-0 z-50">
         <div className="max-w-[1200px] mx-auto px-6 h-[80px] flex items-center justify-between">
           
           {/* Logo */}
-          <img 
-            src={Adidas} 
-            alt="Adidas Logo"
-            className="h-[45px] object-contain"
-          />
+          <a href="#home" className="text-xl font-bold text-[#2545f4] tracking-tight">
+            Samuel Chandra
+          </a>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex gap-12">

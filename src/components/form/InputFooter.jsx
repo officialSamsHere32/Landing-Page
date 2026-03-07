@@ -55,7 +55,7 @@ export default function ContactForm({
         autoComplete="email"
       />
 
-      <Button type='submit' className='sm:w-[150px] w-[125px] ml-[135px]'>{submitLabel}</Button>
+      <Button type='submit' className='sm:w-[150px] w-[125px] '>{submitLabel}</Button>
     </form>
   )
 }
