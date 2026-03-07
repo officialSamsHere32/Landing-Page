@@ -5,6 +5,7 @@ import CardSection from "./components/card-section.jsx";
 import RootForm from "./components/form/RootForm.jsx";
 import History from "./components/History.jsx";
 import Footer from "./components/Footer.jsx";
+import Portfolio from "./components/portfolio.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
         </Routes>
         <CardSection />
         <History />
+        <Portfolio />
         <Footer />
       </div>
     </>
