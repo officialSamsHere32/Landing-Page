@@ -7,6 +7,7 @@ import History from "./components/History.jsx";
 import Skills from "./components/Skills.jsx";
 import Footer from "./components/Footer.jsx";
 import Portfolio from "./components/portfolio.jsx";
+import Grid from "./components/gid.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<RootComponent />} />
           <Route path="/contact" element={<RootForm />} />
+          <Route path="/grid" element={<Grid />} />
         </Routes>
         <CardSection />
         <History />
