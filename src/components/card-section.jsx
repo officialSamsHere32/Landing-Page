@@ -31,7 +31,7 @@ const cards = [
 
 function CardSection() {
   return (
-    <section className="sm:w-full sm:border-0 sm:flex sm:justify-center sm:bg-gray-50 w-full py-24 flex justify-center bg-gray-50 border-4 border-teal-950">
+    <section id="about" className="sm:w-full sm:border-0 sm:flex sm:justify-center sm:bg-gray-50 w-full py-24 flex justify-center bg-gray-50 border-4 border-teal-950">
       <div className="sm:w-[1200px] w-[300px]">
 
         {/* Section Title */}

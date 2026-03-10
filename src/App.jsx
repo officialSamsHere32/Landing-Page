@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<RootComponent />} />
           <Route path="/contact" element={<RootForm />} />
-          <Route path="/GridLayout" element={<GridLayout />} />
+          <Route path="/grid" element={<GridLayout />} />
         </Routes>
         <CardSection />
         <History />
