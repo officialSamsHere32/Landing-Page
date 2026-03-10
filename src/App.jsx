@@ -6,6 +6,7 @@ import RootForm from "./components/form/RootForm.jsx";
 import History from "./components/History.jsx";
 import Footer from "./components/Footer.jsx";
 import Portfolio from "./components/portfolio.jsx";
+import GridLayout from "./components/GridLayout.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<RootComponent />} />
           <Route path="/contact" element={<RootForm />} />
+          <Route path="/grid" element={<GridLayout />} />
         </Routes>
         <CardSection />
         <History />
