@@ -109,7 +109,6 @@ function Navbar() {
     setIsOpen(prev => !prev);
   };
 
-  // 🔥 Prevent body scroll when sidebar open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
@@ -117,7 +116,7 @@ function Navbar() {
   return (
     <>
       {/* Navbar Container */}
-      <nav className="w-full shadow-md bg-white top-0 z-50">
+      <nav className="fixed w-full shadow-md bg-white top-0 z-50">
         <div className="max-w-[1200px] mx-auto px-6 h-[80px] flex items-center justify-between">
           
           {/* Logo */}

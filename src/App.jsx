@@ -7,6 +7,7 @@ import History from "./components/History.jsx";
 import Footer from "./components/Footer.jsx";
 import Portfolio from "./components/portfolio.jsx";
 import GridLayout from "./components/GridLayout.jsx";
+import Skills from "./components/skills.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function App() {
         </Routes>
         <CardSection />
         <History />
+        <Skills />
         <Portfolio />
         <Footer />
       </div>
