@@ -88,14 +88,12 @@ function Portfolio() {
                           <div className="flex gap-2 sm:gap-3 mt-auto pt-3 sm:pt-4 border-t border-[#334155] flex-col sm:flex-row">
                             <a 
                               href={card.github}
-                              target="_blank"
                               rel="noopener noreferrer"
                               className="flex-1 text-center py-2 px-3 sm:px-4 rounded-lg border-2 border-slate-400 text-slate-300 text-xs sm:text-sm font-semibold hover:bg-slate-700 hover:border-slate-300 transition-all duration-200">
                               GitHub
                             </a>
                             <a 
                               href={card.demo}
-                              target="_blank"
                               rel="noopener noreferrer"
                               className="flex-1 text-center py-2 px-3 sm:px-4 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 text-white text-xs sm:text-sm font-semibold hover:from-blue-600 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all duration-200">
                               Live Demo

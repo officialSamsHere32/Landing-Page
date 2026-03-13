@@ -1,7 +1,5 @@
 import React from "react";
-import Img1 from "../assets/adidas.png";
-import Img2 from "../assets/adidas.png";
-import Img3 from "../assets/adidas.png";
+import Img1 from "../assets/Profile.jpg";
 import reactSvg from "../assets/react.svg";
 import { href } from "react-router-dom";
 
@@ -15,14 +13,14 @@ const cards = [
   },
   {
     id: 2,
-    image: Img2,
+    image: Img1,
     title: "Modern Stack",
     desc: "Powered by the latest frontend technologies for scalable applications.",
     href: "X2.com"
   },
   {
     id: 3,
-    image: Img3,
+    image: Img1,
     title: "Easy Deployment",
     desc: "Deploy your project easily with seamless integration support.",
     href: "X3.com"
@@ -54,8 +52,8 @@ function CardSection() {
                 alt={card.title}
                 className="sm:w-full sm:h-[180px] w-8 object-contain mb-6"
               />
-              <h3 className="sm:text-2xl text-sm font-semibold mb-4">{card.title}</h3>
-              <p className="text-gray-600">{card.desc}</p>
+              <h3 className="sm:text-2xl text-sm font-semibold mb-4 text-center">{card.title}</h3>
+              <p className="text-gray-600 text-center">{card.desc}</p>
             </div>
             </a>
           ))}
