@@ -10,7 +10,7 @@ const skillsData = [
   {
     category: "Backend",
     color: "from-purple-500 to-purple-600",
-    skills: ["Node.js", "REST APIs"]
+    skills: ["Responsive Design"]
   },
   {
     category: "Tools & Others",

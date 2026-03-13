@@ -93,7 +93,7 @@
 
 
 import React, { useState, useEffect } from "react";
-import Adidas from "../assets/adidas.png";
+import Adidas from "../assets/react.svg";
 
 const navItems = [
   { id: 1, text: "Home", href: "#home" },

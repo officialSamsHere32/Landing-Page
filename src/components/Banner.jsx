@@ -1,6 +1,5 @@
-import React from "react";
 import Button from "./Button.jsx";
-import adidas from "../assets/adidas.png";
+import adidas from "../assets/Ppl.jpg";
 
 function Banner() {
   return (
