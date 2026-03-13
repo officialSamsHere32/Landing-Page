@@ -21,7 +21,7 @@ const cards2 = [
 function History() {
   return (
     <>
-      <section className="w-full py-12 sm:py-24 flex flex-col justify-center bg-gray-50">
+      <section className="w-full py-12 sm:py-24 justify-center bg-gray-50">
         <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 ">
           <div className="text-center sm:text-lg text-base sm:py-10 py-6 px-4 sm:px-8 sm:mt-10 mt-6">
             <h2 className="sm:text-4xl text-[22px] font-bold">About Me</h2>
