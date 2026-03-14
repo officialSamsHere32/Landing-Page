@@ -1,5 +1,7 @@
 import React from "react";
-import Img1 from "../assets/Profile.jpg";
+import Img1 from "../assets/Fast.png";
+import Img2 from "../assets/Tech.jpg";
+import Img3 from "../assets/Easy.jpg";
 import reactSvg from "../assets/react.svg";
 import { href } from "react-router-dom";
 
@@ -13,14 +15,14 @@ const cards = [
   },
   {
     id: 2,
-    image: Img1,
+    image: Img2,
     title: "Modern Stack",
     desc: "Powered by the latest frontend technologies for scalable applications.",
     href: "X2.com"
   },
   {
     id: 3,
-    image: Img1,
+    image: Img3,
     title: "Easy Deployment",
     desc: "Deploy your project easily with seamless integration support.",
     href: "X3.com"
