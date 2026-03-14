@@ -1,6 +1,6 @@
 import React from "react";
 import Img1 from "../assets/Fast.png";
-import Img2 from "../assets/Tech.jpg";
+import Img2 from "../assets/Moder.png";
 import Img3 from "../assets/Easy.jpg";
 import reactSvg from "../assets/react.svg";
 import { href } from "react-router-dom";
