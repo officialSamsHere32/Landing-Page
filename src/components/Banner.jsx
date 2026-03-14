@@ -10,15 +10,13 @@ function Banner() {
           <div className="w-full">
             <div className="border-2 border-gray-800 rounded-3xl sm:border-0 px-6 py-8 sm:px-0 sm:py-0">
               <h1 className="text-center text-2xl sm:text-4xl mb-6 font-semibold text-[#184657]">
-                The dream of every frontend developer!
+                Introducing...
               </h1>
               <h2 className="text-center text-3xl sm:text-5xl mb-6 font-extrabold text-black">
-                Vite is here
+                The bes
               </h2>
               <p className="text-center text-base sm:text-xl mb-10 font-normal text-black">
                 Work in a place that makes you comfortable.<br />
-                Download now. <br />
-                See Versions.
               </p>
             </div>
 
