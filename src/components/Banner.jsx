@@ -13,7 +13,7 @@ function Banner() {
                 Introducing...
               </h1>
               <h2 className="text-center text-3xl sm:text-5xl mb-6 font-extrabold text-black">
-                The bes
+                The best and optimal developer.
               </h2>
               <p className="text-center text-base sm:text-xl mb-10 font-normal text-black">
                 Work in a place that makes you comfortable.<br />
@@ -45,25 +45,23 @@ function Banner() {
           <div className="flex items-center justify-between h-[598px]">
             <div className="w-1/2 pr-8">
               <h1 className="text-4xl mb-8 font-semibold text-[#184657]">
-                The dream of every frontend developer!
+                 Introducing...
               </h1>
 
-              <h2 className="text-5xl mb-8 font-extrabold text-black">Vite is here</h2>
+              <h2 className="text-5xl mb-8 font-extrabold text-black">The best and optimal developer.</h2>
 
               <div className="text-xl mb-10 font-normal text-black">
                 Work in a place that makes you comfortable.<br />
-                Download now<br />
-                See Versions.
               </div>
 
               <div className="flex space-x-4 mt-6">
                 <Button
                   className="bg-[#2545f4] text-white px-12 py-3 rounded-xl text-lg font-bold hover:bg-[#3b4ba5] hover:text-white"
-                  name="Download"
+                  name="My Socials"
                 />
                 <Button
                   className="border border-[#2545f4] text-[#2545f4] px-12 py-3 rounded-xl text-lg font-bold hover:bg-[#3b4ba5] hover:text-white"
-                  name="Versions"
+                  name="My Work"
                 />
               </div>
             </div>
