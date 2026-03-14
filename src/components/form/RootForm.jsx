@@ -1,5 +1,5 @@
 // import LayoutWrapper from "../layout/LayoutWrapper"
-import LayoutWrapper from "../Layout/layoutWrapper.jsx" 
+import LayoutWrapper from "../../layoutWrapper.jsx" 
 import ContactForm from "./ContactForm"
 
 export default function RootForm() {
