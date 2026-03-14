@@ -1,5 +1,5 @@
-// import Layout from "../layout/Layout"
-import Layout from "../layout/Layout" 
+// import LayoutWrapper from "../layout/LayoutWrapper"
+import LayoutWrapper from "../layout/layoutWrapper" 
 import ContactForm from "./ContactForm"
 
 export default function RootForm() {
@@ -8,12 +8,12 @@ const handleContact = (formData) => {
   }
 
   return (
-    <Layout>
+    <LayoutWrapper>
       <ContactForm
         onSubmit={handleContact}
         title="Contact Us"
         submitLabel="Send Message"
       />
-    </Layout>
+    </LayoutWrapper>
   )
 }
