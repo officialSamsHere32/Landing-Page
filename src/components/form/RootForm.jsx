@@ -1,4 +1,5 @@
-import Layout from "../layout/Layout"
+// import Layout from "../layout/Layout"
+import Layout from "../layout/Layout" 
 import ContactForm from "./ContactForm"
 
 export default function RootForm() {
