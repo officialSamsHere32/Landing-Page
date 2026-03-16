@@ -1,74 +1,35 @@
 import Button from "./Button.jsx";
-import adidas from "../assets/Ppl.jpg";
 
 function Banner() {
   return (
     <>
-      <section className="lg:hidden w-full flex justify-center py-24  sm:[background:linear-gradient(240deg,rgba(39,245,111),rgba(19,110,52)_100%)]">
-        <div className="flex-col w-full max-w-[1200px] flex items-center px-6">
-          {/* Left Content */}
-          <div className="w-full">
-            <div className="border-2 border-gray-800 rounded-3xl sm:border-0 px-6 py-8 sm:px-0 sm:py-0">
-              <h1 className="text-center text-2xl sm:text-4xl mb-6 font-semibold text-[#184657]">
-                Introducing...
-              </h1>
-              <h2 className="text-center text-3xl sm:text-5xl mb-6 font-extrabold text-black">
-                The best and optimal developer.
-              </h2>
-              <p className="text-center text-base sm:text-xl mb-10 font-normal text-black">
-                Work in a place that makes you comfortable.<br />
-              </p>
-            </div>
-
-            <div className="flex justify-center space-x-4 mt-4">
-              <Button
-                className="bg-[#2545f4] text-white px-8 sm:px-12 py-3 rounded-xl text-base sm:text-lg font-bold hover:bg-[#3b4ba5] transition"
-                name="Download"
-              />
-
-              <Button
-                className="border border-[#2545f4] text-[#2545f4] px-8 sm:px-12 py-3 rounded-xl text-base sm:text-lg font-bold hover:bg-[#2545f4] hover:text-white transition"
-                name="Versions"
-              />
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="w-full mt-8 flex justify-center">
-            <img src={adidas} alt="Banner" className="w-[320px] sm:w-[450px] object-contain" />
-          </div>
-        </div>
-      </section>
-
-      <section className="hidden lg:block w-full py-20">
-        <div className="w-full max-w-[1200px] mx-auto px-6">
-          <div className="flex items-center justify-between h-[598px]">
-            <div className="w-1/2 pr-8">
-              <h1 className="text-4xl mb-8 font-semibold text-[#184657]">
-                 Introducing...
-              </h1>
-
-              <h2 className="text-5xl mb-8 font-extrabold text-black">The best and optimal developer.</h2>
-
-              <div className="text-xl mb-10 font-normal text-black">
-                Work in a place that makes you comfortable.<br />
+      <section className="w-full flex justify-center py-24 px-4">
+        <div className="w-full max-w-3xl bg-white rounded-2xl shadow-lg py-8 px-8 sm:px-12 hover:shadow-2xl transition duration-300 mb-9 text-center">
+          <h1 className="text-2xl sm:text-3xl font-medium text-[#333333] w-[211px] h-[29px] mx-auto">Sekolah Digital</h1>
+          <h2 className="mt-2 text-4xl sm:text-6xl font-bold text-[#333333] mb-5">Minerva</h2>
+          <p className="mt-4 text-base sm:text-lg text-[#333333]">
+            Minerva merupakan kursus online secara Private yang bertujuan untuk membantu proses
+            pembelajaran dengan harga yang sangat terjangkau, dan penyampaian materi yang mudah
+            dipahami.
+          </p>
+          <div className="mt-8 w-full flex flex-col items-center gap-4">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className="rounded-xl border w-[90px] h-[90px] border-[#d9d9d9] bg-[#fafafa] py-3 mx-auto">
+                <div className="text-sm font-semibold text-[#333333]">Member</div>
+                <div className="mt-1 text-3xl font-bold text-[#333333]">5</div>
               </div>
-
-              <div className="flex space-x-4 mt-6">
-                <Button
-                  className="bg-[#2545f4] text-white px-12 py-3 rounded-xl text-lg font-bold hover:bg-[#3b4ba5] hover:text-white"
-                  name="My Socials"
-                />
-                <Button
-                  className="border border-[#2545f4] text-[#2545f4] px-12 py-3 rounded-xl text-lg font-bold hover:bg-[#3b4ba5] hover:text-white"
-                  name="My Work"
-                />
+              <div className="rounded-xl border w-[90px] h-[90px] border-[#d9d9d9] bg-[#fafafa] py-3 mx-auto">
+                <div className="text-sm font-semibold text-[#333333]">Jam</div>
+                <div className="mt-1 text-3xl font-bold text-[#333333]">40</div>
+              </div>
+              <div className="rounded-xl border w-[90px] h-[90px] border-[#d9d9d9] bg-[#fafafa] py-3 mx-auto">
+                <div className="text-sm font-semibold text-[#333333]">Kelas</div>
+                <div className="mt-1 text-3xl font-bold text-[#333333]">4</div>
               </div>
             </div>
-
-            <div className="w-1/2 flex justify-end">
-              <img src={adidas} alt="Img Banner" className="w-[553px] h-[598px] object-contain" />
-            </div>
+            <button className="mt-2 w-full max-w-xs rounded-xl bg-[#007bff] px-6 py-3 text-base font-semibold text-white shadow-md hover:bg-[#0056d6] transition duration-200">
+              Gabung
+            </button>
           </div>
         </div>
       </section>
