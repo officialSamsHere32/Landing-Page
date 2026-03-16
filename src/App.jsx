@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import RootComponent from "./components/index.jsx";
+import PriceHold from "./components/Price.jsx";
 // import CardSection from "./components/card-section.jsx";
 // import RootForm from "./components/form/RootForm.jsx";
 // import History from "./components/History.jsx";
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<RootComponent />} />
         </Routes>
+        <PriceHold />
         {/* <CardSection />
         <History />
         <Skills />
