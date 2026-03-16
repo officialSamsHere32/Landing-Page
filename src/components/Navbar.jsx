@@ -74,7 +74,7 @@ function Navbar() {
               key={item.id}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              className="text-black text-lg hover:font-bold hover:bg-gray-100 transition-all duration-200 py-2 px-3 rounded border-b border-gray-200"
+              className="text-[#FFFFFF] text-lg hover:font-bold hover:bg-gray-100 transition-all duration-200 py-2 px-3 rounded border-b border-gray-200"
             >
               {item.text}
             </a>
