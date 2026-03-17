@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import RootComponent from "./components/index.jsx";
 import PriceHold from "./components/Price.jsx";
 import Class from "./components/Class.jsx";
+import Testimoni from "./components/Testimoni.jsx";
+import Footer from "./components/footer.jsx";
 // import CardSection from "./components/card-section.jsx";
 // import RootForm from "./components/form/RootForm.jsx";
 // import History from "./components/History.jsx";
@@ -17,16 +19,19 @@ function App() {
   return (
     <>
       <div className="overflow-x-hidden">
-        <Routes>
-          <Route path="/" element={<RootComponent />} />
-        </Routes>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<RootComponent />} />
+          </Routes>
+        </BrowserRouter>
         <PriceHold />
         <Class />
+        <Testimoni />
         {/* <CardSection />
         <History />
         <Skills />
-        <Portfolio />
-        <Footer /> */}
+        <Portfolio /> */}
+        <Footer />
       </div>
     </>
   );
