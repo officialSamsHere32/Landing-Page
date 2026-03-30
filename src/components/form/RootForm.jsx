@@ -1,6 +1,6 @@
 // import LayoutWrapper from "../layout/LayoutWrapper"
 import LayoutWrapper from "../../layoutWrapper.jsx" 
-import ContactForm from "./ContactForm"
+import ContactForm from "./ContactForm.jsx"
 
 export default function RootForm() {
 const handleContact = (formData) => {
